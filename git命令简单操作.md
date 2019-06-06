@@ -1,11 +1,10 @@
 
 
-=====
  git 命令简单操作过程 
 =====
 
 wu-liang@wingame MINGW64 /y/Documents/blog/blog
-$ git clone https://github.com/sikongzaixing/blog.git
+`$ git clone https://github.com/sikongzaixing/blog.git`
 Cloning into 'blog'...
 remote: Enumerating objects: 3, done.
 remote: Counting objects: 100% (3/3), done.
@@ -13,23 +12,23 @@ remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), done.
 
 wu-liang@wingame MINGW64 /y/Documents/blog/blog
-$ git add .
+`$ git add . `
 fatal: Not a git repository (or any of the parent directories): .git
 wu-liang@wingame MINGW64 /y/Documents/blog/blog
-$ git push -u origin master
+`$ git push -u origin master`
 fatal: Not a git repository (or any of the parent directories): .git
 此处失败原因，【需要切换目录】
 wu-liang@wingame MINGW64 /y/Documents/blog/blog
-$ ls
+`$ ls`
 blog/
 wu-liang@wingame MINGW64 /y/Documents/blog/blog
-$ cd blog/
+`$ cd blog/`
 wu-liang@wingame MINGW64 /y/Documents/blog/blog/blog (master)
-$ ls
+`$ ls`
 README.md  test.txt
 
 wu-liang@wingame MINGW64 /y/Documents/blog/blog/blog (master)
-$ git push -u origin master
+`$ git push -u origin master`
 fatal: HttpRequestException encountered.
    ▒▒▒▒▒▒▒▒ʱ▒▒▒▒
 fatal: HttpRequestException encountered.
@@ -39,7 +38,7 @@ Everything up-to-date
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 wu-liang@wingame MINGW64 /y/Documents/blog/blog/blog (master)
-$ git status
+`$ git status`
 On branch master
 Your branch is up to date with 'origin/master'.
 
@@ -51,16 +50,16 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 
 wu-liang@wingame MINGW64 /y/Documents/blog/blog/blog (master)
-$ git add .
+`$ git add . `
 
 wu-liang@wingame MINGW64 /y/Documents/blog/blog/blog (master)
-$ git commit -m "test"
+`$ git commit -m "test"`
 [master 642a7f9] test
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 test.txt
 
 wu-liang@wingame MINGW64 /y/Documents/blog/blog/blog (master)
-$ git push -u origin master
+`$ git push -u origin master`
 fatal: HttpRequestException encountered.
    ▒▒▒▒▒▒▒▒ʱ▒▒▒▒
 fatal: HttpRequestException encountered.
@@ -76,7 +75,7 @@ To https://github.com/sikongzaixing/blog.git
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 wu-liang@wingame MINGW64 /y/Documents/blog/blog/blog (master)
-$ git help
+`$ git help`
 usage: git [--version] [--help] [-C <path>] [-c name=value]
            [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
            [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
@@ -121,17 +120,17 @@ concept guides. See 'git help <command>' or 'git help <concept>'
 to read about a specific subcommand or concept.
 
 wu-liang@wingame MINGW64 /y/Documents/blog/blog/blog (master)
-$ git rm test.txt
+`$ git rm test.txt`
 rm 'test.txt'
 
 wu-liang@wingame MINGW64 /y/Documents/blog/blog/blog (master)
-$ git commit -m "rm-test"
+`$ git commit -m "rm-test"`
 [master 573b243] rm-test
  1 file changed, 0 insertions(+), 0 deletions(-)
  delete mode 100644 test.txt
 
 wu-liang@wingame MINGW64 /y/Documents/blog/blog/blog (master)
-$ git push origin master
+`$ git push origin master`
 fatal: HttpRequestException encountered.
    ▒▒▒▒▒▒▒▒ʱ▒▒▒▒
 fatal: HttpRequestException encountered.
