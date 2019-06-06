@@ -10,3 +10,10 @@
 ### git commit -m "test2"  
 ### git push origin master 
 ### git pull origin master
+
+=====
+#### git fetch origin
+#### git merge origin/master
+#### git pull origin master
+
+=====
